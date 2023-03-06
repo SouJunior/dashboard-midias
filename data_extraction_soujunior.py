@@ -62,7 +62,7 @@ sleep(2)
 
 ### click the export button
 export_btn = driver.find_element(By.XPATH,"//button[@class='artdeco-button artdeco-button--primary']")
-export_btn.click()
+export_btn.send_keys(Keys.ENTER)
 sleep(5)
 ### Como clicar em "exportar" da tela que aparece? (ver interação com pop-up)
 
@@ -97,7 +97,7 @@ sleep(2)
 
 ### click on the export button
 export_btn = driver.find_element(By.XPATH,"//button[@class='artdeco-button artdeco-button--primary']")
-export_btn.click()
+export_btn.send_keys(Keys.ENTER)
 sleep(5)
 
 #Como clicar em "exportar" da tela que aparece? (ver interação com pop-up)
@@ -133,7 +133,7 @@ sleep(2)
 
 ### click the export button
 export_btn = driver.find_element(By.XPATH,"//button[@class='artdeco-button artdeco-button--primary']")
-export_btn.click()
+export_btn.send_keys(Keys.ENTER)
 sleep(5)
 
 #Como clicar em "exportar" da tela que aparece? (ver interação com pop-up)
