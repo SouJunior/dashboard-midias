@@ -16,7 +16,7 @@ driver.get('https://linkedin.com/')
 sleep(2)
 
 ### find username_id and input the email
-username = driver.find_element(By.ID,'session_key')
+username = driver.find_element(By.NAME,'session_key')
 username.send_keys('seuemaildecadastronolinkedin')
 
 ### find password_id and input the password
@@ -24,7 +24,7 @@ password = driver.find_element(By.ID,'session_password')
 password.send_keys('senhadolinkedin')
 
 ### click the login button
-login_btn = driver.find_element(By.CLASS_NAME,'sign-in-form__submit-button')
+login_btn = driver.find_element(By.XPATH,"//button[@type='submit']")
 login_btn.click()
 sleep(4)
 
