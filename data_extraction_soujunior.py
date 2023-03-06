@@ -9,8 +9,7 @@ from selenium.webdriver.common.keys import Keys
 #----------------------------------------------------------------------------
 
 ### load selenium driver
-path = ('C:\\Users\\Camila\\Documents\\SouJunior\\Projeto Dashboard Midias\\chromedriver.exe')
-service = Service(path)
+service = Service('chromedriver.exe')
 service.start()
 driver = webdriver.Remote(service.service_url)
 driver.get('https://linkedin.com/')
